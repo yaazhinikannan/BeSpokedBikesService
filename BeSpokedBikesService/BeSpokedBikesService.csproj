@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BeSpokedBikesService.Business\BeSpokedBikesService.Business.csproj" />
+    <ProjectReference Include="..\BeSpokedBikesService.Contract.Business\BeSpokedBikesService.Contract.Business.csproj" />
+    <ProjectReference Include="..\BeSpokedBikesService.Data\BeSpokedBikesService.Data.csproj" />
+    <ProjectReference Include="..\BeSpokedBikesService.TypeResolver\BeSpokedBikesService.TypeResolver.csproj" />
+    <ProjectReference Include="..\BeSpokedBikesService.ViewModel\BeSpokedBikesService.ViewModel.csproj" />
+  </ItemGroup>
+
+</Project>

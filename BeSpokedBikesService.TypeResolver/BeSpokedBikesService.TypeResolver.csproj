@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+    <PackageReference Include="NETStandard.Library" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BeSpokedBikesService.Business\BeSpokedBikesService.Business.csproj" />
+    <ProjectReference Include="..\BeSpokedBikesService.Contract.Business\BeSpokedBikesService.Contract.Business.csproj" />
+    <ProjectReference Include="..\BeSpokedBikesService.Data\BeSpokedBikesService.Data.csproj" />
+  </ItemGroup>
+
+</Project>
